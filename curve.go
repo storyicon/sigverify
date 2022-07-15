@@ -32,6 +32,16 @@ func VerifyEllipticCurveSignatureEx(address ethcommon.Address, data []byte, sign
 	return recovered == address, nil
 }
 
+// VerifyEllipticCurveHexSignatureEx is used to verify elliptic curve signatures
+// It calls the EcRecoverEx function to verify the signature.
+func VerifyEllipticCurveHexSignatureEx(address ethcommon.Address, data []byte, signature string) (bool, error) {
+	sig, err := HexDecode(signature)
+	if err != nil {
+		return false, err
+	}
+	return VerifyEllipticCurveSignatureEx(address, data, sig)
+}
+
 // VerifyEllipticCurveSignature is used to verify the elliptic curve signature
 // It calls the native ecrecover function to verify the signature
 func VerifyEllipticCurveSignature(address ethcommon.Address, data []byte, signature []byte) (bool, error) {

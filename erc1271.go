@@ -17,11 +17,11 @@ package sigverify
 import (
 	"context"
 
-	"github.com/storyicon/sigverify/contracts/erc1271"
 	"github.com/ethereum/go-ethereum/accounts"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	ethcommon "github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethclient"
+	"github.com/storyicon/sigverify/contracts/erc1271"
 )
 
 // magicValueERC1271 is defined in the ERC1271 standard, which comes from:
