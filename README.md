@@ -6,4 +6,4 @@ It supports:
 1. Standard elliptic curve signature verification. (eth_sign).
 2. EIP712 typed data verification. (eth_signTypedData_v*).
 3. ERC1271 Smart contract wallet signature verification (isValidSignature).
-4. Additional support for signature verification of ledger wallet.
+4. Some hardware wallets signature verification such as ledger.
