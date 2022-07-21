@@ -5,6 +5,7 @@ https://camo.githubusercontent.com/915b7be44ada53c290eb157634330494ebe3e30a/6874
 )](https://pkg.go.dev/github.com/storyicon/sigverify?tab=doc)
 [![Go Report Card](https://goreportcard.com/badge/github.com/storyicon/sigverify)](https://goreportcard.com/report/github.com/storyicon/sigverify)
 
+![sigverify](./docs/images/logo.png)
 
 This project is used to verify signatures under various specifications of ethereum. In addition to the standard elliptic curve signature, it also supports the signature of wallets such as ledger and argent.
 
